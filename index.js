@@ -8,9 +8,9 @@ const app = express();
 
 // MongoDB connection
 const PORT = 3000;
-const DBURL = "mongodb://127.0.0.1:27017/ticket2";
+const DBURL = "mongodb+srv://SOHEL:IamSohelIslam@apjcwebapp.vpjo2pm.mongodb.net/?retryWrites=true&w=majority&appName=APJCWEBAPP";
 
-app.use('/',ticketRoutes)
+app.use('/tickets',ticketRoutes)
 
 mongoose
   .connect(DBURL)
