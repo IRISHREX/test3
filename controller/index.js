@@ -44,8 +44,8 @@ const importCsv= async (req, res) => {
       transformStream.on('finish', resolve);
       transformStream.on('error', reject);
     });
-
-    const result = await Ticket.insertMany(transformedTickets);
+let transformeTicketSorted= await transformedTickets.sort((a,b)=>a-b);
+    const result = await Ticket.insertMany(transformeTicketSorted);
 
     fs.unlinkSync(path);
 
