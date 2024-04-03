@@ -6,10 +6,10 @@ const ticketSchema = new mongoose.Schema({
     },
     uid:{
         type: String,
-        default:()=>new Date().getTime();
+        default:()=>new Date().getTime()
     }
 });
 
-const Ticket = mongoose.model('Ticket', ticketSchema);
+const Ticket = mongoose.model('Ticket2', ticketSchema);
 
 module.exports = Ticket;

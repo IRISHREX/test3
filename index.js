@@ -7,7 +7,7 @@ const app = express();
 
 
 // MongoDB connection
-const PORT =proces.env.PORT|| 3000;
+const PORT =process.env.PORT|| 3000;
 const DBURL = process.env.DB_URL||"mongodb+srv://SOHEL:IamSohelIslam@apjcwebapp.vpjo2pm.mongodb.net/?retryWrites=true&w=majority&appName=APJCWEBAPP";
 
 app.use('/tickets',ticketRoutes)
