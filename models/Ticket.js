@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ticketSchema = new mongoose.Schema({
     ticketCode: {
-        type: Object,
+        type: String,
     }
 });
 
